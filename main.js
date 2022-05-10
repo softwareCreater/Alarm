@@ -30,10 +30,10 @@ setInterval(() => {
         sec = `0${sec}`;
     }
     // if(hour===14 && min ===52 && sec===25)
-    if( sec===00)
+    if(sec===00)
     
     {
-        console.log("alram play")
+        alert("alram play")
         popUP.style.opacity = '1';
         const alarmAudio = new Audio('alarm.mp3');
         alarmAudio.play();
