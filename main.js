@@ -30,7 +30,7 @@ setInterval(() => {
         sec = `0${sec}`;
     }
     // if(hour===14 && min ===52 && sec===25)
-    if(sec===00)
+    if(sec===40)
     
     {
         alert("alram play")
