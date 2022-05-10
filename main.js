@@ -33,7 +33,6 @@ setInterval(() => {
     if(sec===40)
     
     {
-        alert("alram play")
         popUP.style.opacity = '1';
         const alarmAudio = new Audio('alarm.mp3');
         alarmAudio.play();
