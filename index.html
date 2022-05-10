@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+.alarm-container{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f1f1;
+     background: lightgray;
+    }
+    @media(max-width:768px){
+        .alarm-container{
+            width: 38rem;
+            height: 60rem;
+            overflow: hidden;
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            top: 3rem;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+    hr{
+        position: absolute;
+        width: 20rem;
+        height: .4rem;
+        top: 8rem;
+        background: black;
+    }
+    .btn-control{
+        position: absolute;
+        bottom: 4rem;
+        width: 90%;
+        background: #fff;
+        text-align: center;
+        padding: 2rem;
+    }
+    .time{
+        position: absolute;
+        top: 15rem;
+        width: 90%;
+        /* height: 4rem; */
+        background: #f1f1f1;
+        padding: 4rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .btn{
+        padding: 1rem 2rem;
+        font-size: 2.3rem;
+        cursor: pointer;
+        transition: 1s;
+        border-radius: .2rem;
+        outline: none;
+    }
+.ampm{
+    font-size: 4rem;
+    position: absolute;
+    right: 3rem;
+    top: 19rem;
+    z-index: 2;
+
+}
+.pop-up{
+    position: absolute;
+    width: 90%;
+    /* height: 8rem; */
+    padding: 4rem;
+    background: #ffff00;
+    text-align: center;
+    margin-top: 14rem;
+    opacity: 0;
+    transition: 1s;
+
+}
+p{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+h2{
+    /* color: #fff; */
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+    }
+</style>
+<body>
+    <div class="alarm-container">
+        <!-- <audio src="alarm.mp3" autoplay controls></audio> -->
+        <h1 class="text">Alarm App</h1>
+        <hr>
+        <span class="ampm">am</span><div class="time"></div> 
+        <div class="btn-control">
+            <!-- <button class="btn">PlayAlarm</button> -->
+            <p>When second value is equal to 00 alarm will play</p>
+        </div>
+        <div class="pop-up">
+            <h2>Good Morning Utho</h2>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
